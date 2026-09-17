@@ -15,8 +15,12 @@ alert("Let's integrate!");
 
 const a = parseFloat(prompt("a: "));
 const b = parseFloat(prompt("b: "));
-const n = parseInt(prompt("Количество точек интегрирования: "));
+if (a > b)
+    alert("Ошибка. Неверно указаны границы интервала.");
+else
+{
+    const n = parseInt(prompt("Количество точек интегрирования: "));
 
-const result = MidpointRuleIntegration(mathFunction, a, b, n);
-alert(` a: ${a}\n b: ${b}\n Точек: ${n}\n Результат: ${result.toFixed(4)}`);
-
+    const result = MidpointRuleIntegration(mathFunction, a, b, n);
+    alert(` a: ${a}\n b: ${b}\n Точек: ${n}\n Результат: ${result.toFixed(4)}.`);
+}
