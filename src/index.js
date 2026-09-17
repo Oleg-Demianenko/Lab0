@@ -13,9 +13,9 @@ function MidpointRuleIntegration(func, a, b, n)
 
 alert("Let's integrate!");
 
-const a = parseInt(prompt("a: "));
-const b = parseInt(prompt("b: "));
-const n = parseFloat(prompt("Количество точек интегрирования: "));
+const a = parseFloat(prompt("a: "));
+const b = parseFloat(prompt("b: "));
+const n = parseInt(prompt("Количество точек интегрирования: "));
 
 const result = MidpointRuleIntegration(mathFunction, a, b, n);
 alert(` a: ${a}\n b: ${b}\n Точек: ${n}\n Результат: ${result}`);
