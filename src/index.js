@@ -18,5 +18,5 @@ const b = parseFloat(prompt("b: "));
 const n = parseInt(prompt("Количество точек интегрирования: "));
 
 const result = MidpointRuleIntegration(mathFunction, a, b, n);
-alert(` a: ${a}\n b: ${b}\n Точек: ${n}\n Результат: ${result}`);
+alert(` a: ${a}\n b: ${b}\n Точек: ${n}\n Результат: ${result.toFixed(4)}`);
 
